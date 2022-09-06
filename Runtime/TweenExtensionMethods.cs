@@ -16,6 +16,11 @@ namespace Kogane
             return self;
         }
 
+        public static Tween InsertFirst( this Tween self, Sequence sequence )
+        {
+            return self.Insert( sequence, 0 );
+        }
+
         public static Tween Join( this Tween self, Sequence sequence )
         {
             sequence.Join( self );
