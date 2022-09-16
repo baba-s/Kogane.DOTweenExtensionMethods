@@ -27,6 +27,13 @@ namespace Kogane
             return self;
         }
 
+        public static Tween JoinIf( this Tween self, bool condition, Sequence sequence )
+        {
+            if ( !condition ) return self;
+            sequence.Join( self );
+            return self;
+        }
+
         public static Tween Prepend( this Tween self, Sequence sequence )
         {
             sequence.Prepend( self );
