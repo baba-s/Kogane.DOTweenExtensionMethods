@@ -44,5 +44,11 @@ namespace Kogane
         {
             return conditional ? self.SetDelay( delay ) : self;
         }
+
+        public static void CompleteIf<T>( this T self, bool condition ) where T : Tween
+        {
+            if ( !condition ) return;
+            self.Complete();
+        }
     }
 }
