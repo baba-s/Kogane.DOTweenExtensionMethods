@@ -1,4 +1,5 @@
 ﻿using DG.Tweening;
+using UnityEngine;
 
 namespace Kogane
 {
@@ -49,6 +50,13 @@ namespace Kogane
         {
             if ( !condition ) return;
             self.Complete();
+        }
+
+        public static T SetLink<T, TComponent>( this T self, TComponent component )
+            where T : Tween
+            where TComponent : Component
+        {
+            return self.SetLink( component.gameObject );
         }
     }
 }
