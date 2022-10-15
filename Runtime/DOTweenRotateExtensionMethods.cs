@@ -17,7 +17,7 @@ namespace Kogane
         {
             return self.DORotate
             (
-                endValue: new Vector3( endValue, 0, 0 ),
+                endValue: new( endValue, 0, 0 ),
                 duration: duration,
                 mode: mode
             );
@@ -33,7 +33,7 @@ namespace Kogane
         {
             return self.DORotate
             (
-                endValue: new Vector3( 0, endValue, 0 ),
+                endValue: new( 0, endValue, 0 ),
                 duration: duration,
                 mode: mode
             );
@@ -49,7 +49,7 @@ namespace Kogane
         {
             return self.DORotate
             (
-                endValue: new Vector3( 0, 0, endValue ),
+                endValue: new( 0, 0, endValue ),
                 duration: duration,
                 mode: mode
             );
@@ -65,7 +65,7 @@ namespace Kogane
         {
             return self.DOLocalRotate
             (
-                endValue: new Vector3( endValue, 0, 0 ),
+                endValue: new( endValue, 0, 0 ),
                 duration: duration,
                 mode: mode
             );
@@ -81,7 +81,7 @@ namespace Kogane
         {
             return self.DOLocalRotate
             (
-                endValue: new Vector3( 0, endValue, 0 ),
+                endValue: new( 0, endValue, 0 ),
                 duration: duration,
                 mode: mode
             );
@@ -97,7 +97,7 @@ namespace Kogane
         {
             return self.DOLocalRotate
             (
-                endValue: new Vector3( 0, 0, endValue ),
+                endValue: new( 0, 0, endValue ),
                 duration: duration,
                 mode: mode
             );
