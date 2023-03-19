@@ -15,8 +15,9 @@ namespace Kogane
             RotateMode     mode = RotateMode.Fast
         )
         {
-            return self.DORotate
+            return ShortcutExtensions.DORotate
             (
+                target: self,
                 endValue: new( endValue, 0, 0 ),
                 duration: duration,
                 mode: mode
@@ -31,8 +32,9 @@ namespace Kogane
             RotateMode     mode = RotateMode.Fast
         )
         {
-            return self.DORotate
+            return ShortcutExtensions.DORotate
             (
+                target: self,
                 endValue: new( 0, endValue, 0 ),
                 duration: duration,
                 mode: mode
@@ -47,8 +49,9 @@ namespace Kogane
             RotateMode     mode = RotateMode.Fast
         )
         {
-            return self.DORotate
+            return ShortcutExtensions.DORotate
             (
+                target: self,
                 endValue: new( 0, 0, endValue ),
                 duration: duration,
                 mode: mode
@@ -63,8 +66,9 @@ namespace Kogane
             RotateMode     mode = RotateMode.Fast
         )
         {
-            return self.DOLocalRotate
+            return ShortcutExtensions.DOLocalRotate
             (
+                target: self,
                 endValue: new( endValue, 0, 0 ),
                 duration: duration,
                 mode: mode
@@ -79,8 +83,9 @@ namespace Kogane
             RotateMode     mode = RotateMode.Fast
         )
         {
-            return self.DOLocalRotate
+            return ShortcutExtensions.DOLocalRotate
             (
+                target: self,
                 endValue: new( 0, endValue, 0 ),
                 duration: duration,
                 mode: mode
@@ -95,8 +100,9 @@ namespace Kogane
             RotateMode     mode = RotateMode.Fast
         )
         {
-            return self.DOLocalRotate
+            return ShortcutExtensions.DOLocalRotate
             (
+                target: self,
                 endValue: new( 0, 0, endValue ),
                 duration: duration,
                 mode: mode
