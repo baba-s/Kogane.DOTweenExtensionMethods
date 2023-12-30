@@ -174,5 +174,71 @@ namespace Kogane
         {
             return self.transform.DOLocalRotateZ( endValue, duration, mode );
         }
+
+        public static TweenerCore<Quaternion, Vector3, QuaternionOptions> DORotateX
+        (
+            this Component self,
+            float          endValue,
+            float          duration,
+            RotateMode     mode = RotateMode.Fast
+        )
+        {
+            return self.transform.DORotateX( endValue, duration, mode );
+        }
+
+        public static TweenerCore<Quaternion, Vector3, QuaternionOptions> DORotateY
+        (
+            this Component self,
+            float          endValue,
+            float          duration,
+            RotateMode     mode = RotateMode.Fast
+        )
+        {
+            return self.transform.DORotateY( endValue, duration, mode );
+        }
+
+        public static TweenerCore<Quaternion, Vector3, QuaternionOptions> DORotateZ
+        (
+            this Component self,
+            float          endValue,
+            float          duration,
+            RotateMode     mode = RotateMode.Fast
+        )
+        {
+            return self.transform.DORotateZ( endValue, duration, mode );
+        }
+
+        public static TweenerCore<Quaternion, Vector3, QuaternionOptions> DOLocalRotateX
+        (
+            this Component self,
+            float          endValue,
+            float          duration,
+            RotateMode     mode = RotateMode.Fast
+        )
+        {
+            return self.transform.DOLocalRotateX( endValue, duration, mode );
+        }
+
+        public static TweenerCore<Quaternion, Vector3, QuaternionOptions> DOLocalRotateY
+        (
+            this Component self,
+            float          endValue,
+            float          duration,
+            RotateMode     mode = RotateMode.Fast
+        )
+        {
+            return self.transform.DOLocalRotateY( endValue, duration, mode );
+        }
+
+        public static TweenerCore<Quaternion, Vector3, QuaternionOptions> DOLocalRotateZ
+        (
+            this Component self,
+            float          endValue,
+            float          duration,
+            RotateMode     mode = RotateMode.Fast
+        )
+        {
+            return self.transform.DOLocalRotateZ( endValue, duration, mode );
+        }
     }
 }
